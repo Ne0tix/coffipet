@@ -48,6 +48,9 @@ li:hover{
 	color: #4B2A03
 }
 
+.active{
+	text-decoration: underline;
+}
 a{
 	color: inherit;
 	font-family: Courgette;
