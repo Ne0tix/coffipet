@@ -163,9 +163,9 @@ button {
 }
 
 hr {
-    display: block-inline;
+    display: inline-block;
     height: 1px;
-	width: 65%;
+    width: 65%;
     border: 0;
     border-top: 1px solid #ccc;
     margin: auto;
