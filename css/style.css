@@ -9,14 +9,24 @@ body{
   font-family: 'Courgette';
   font-style: normal;
   font-weight: 400;
-  src: local('Courgette Regular'), local('Courgette-Regular'), url('../police/BHG8ZtTfO0yYnp02--QxqltXRa8TVwTICgirnJhmVJw.woff2') format('woff2');
+  src: url('../police/Courgette-Regular/courgette-regular-webfont.eot');
+  src: url('../police/Courgette-Regular/courgette-regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../police/Courgette-Regular/courgette-regular-webfont.woff2') format('woff2'),
+       url('../police/Courgette-Regular/courgette-regular-webfont.woff') format('woff'),
+       url('../police/Courgette-Regular/courgette-regular-webfont.ttf') format('truetype'),
+       url('../police/Courgette-Regular/courgette-regular-webfont.svg#abcd') format('svg');
 }
 
 @font-face {
   font-family: 'Dekko';
   font-style: normal;
   font-weight: 400;
-  src: local('Dekko'), url('../police/65sfRS5PD_z7ZcEP48_P-g.woff2') format('woff2');
+	src: url('../police/Dekko-Regular/dekko-regular-webfont.eot');
+	src: url('../police/Dekko-Regular/dekko-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../police/Dekko-Regular/dekko-regular-webfont.woff2') format('woff2'),
+	     url('../police/Dekko-Regular/dekko-regular-webfont.woff') format('woff'),
+	     url('../police/Dekko-Regular/dekko-regular-webfont.ttf') format('truetype'),
+	     url('../police/Dekko-Regular/dekko-regular-webfont.svg#webfont') format('svg');
 }
 
 header, section, footer{
@@ -29,48 +39,106 @@ header{
 	padding: 15px;
 }
 
-ul{
-	list-style-type: none;
-	padding: 20px;;
-	margin: 0px;
+#logo{
+	width: 20%;
 }
 
-li{
-	text-align: center;
-	color: #F7B05B;
-	min-height: inherit;
-	transition: background-color 0.3s;
-
+nav{
+    margin-top: 2.5%;
+}
+#nav, #nav ul{
+    padding:0;
+    margin:0;
+    list-style:none;
+    text-align:center;
 }
 
-li:hover{
-	background-color: #CEAC3C;
-	color: #4B2A03
+#nav li{
+    display:inline-block;
+    position:relative;
+    border-radius:8px 8px 8px 8px;
 }
 
-.active{
-	text-decoration: underline;
+#nav #cate{
+    border-radius:8px 8px 0 0;
 }
-a{
-	color: inherit;
-	font-family: Courgette;
-	font-size: 1.7em;
-	text-decoration: none;
+
+#nav ul li{
+    display:inherit;
+    border-radius:0;
+}
+
+#nav ul li:hover{
+    border-radius:0 0;
+}
+
+#nav ul li:last-child{
+    border-radius:0 0 8px 8px;
+}  
+
+#nav ul{
+    position:absolute;
+    z-index: 1000;
+    max-height:0;
+    left: 0;
+    right: 0;
+    overflow:hidden;
+    -moz-transition: .5s all .1s;
+    -webkit-transition: .5s all .1s;
+    transition: .5s all .1s;
+}
+
+#nav li:hover ul{
+    max-height:15em;
+}
+
+/* background des liens sous menus */
+#nav li:nth-child(2) li{
+    background:#7a4305;
+}
+
+/* background des liens menus et sous menus au survol*/
+#nav li:hover, #nav li li:hover{
+    background:#edcf7c;
+}
+
+#nav a{
+    text-decoration:none;
+    color:#F7B05B;
+    font-size: 1.7em;
+    font-family:Courgette;
+}
+
+#nav ul a{
+    padding:8px 0;
+}
+
+#nav li:hover li a{
+    color:#F7B05B;
+    text-transform:inherit;
+}
+
+#nav li:hover a, #nav li li:hover a{
+    color:#4B2A03;
 }
 
 section{
 	background-color: white;
 	font-family: "Dekko";
 	font-size: 1.2em;
+    z-index: 1;
 }
 
 section h1{
 	text-align: center;
 	text-shadow: 4px 4px 4px #aaa;
 	font-size: 2em;
+    color: #6a4b3d;
+    margin-top: 0;
 }
 article {
 	text-align: justify;
+	font-size: 20px;
 	padding-left: 10%;
 	padding-right: 10% !important;
 }
@@ -179,8 +247,20 @@ footer{
 	font-family: Courgette;
 	color:#F7B05B;
 	text-align: center;
+	padding: 7px;
 }
 
+#contact{
+		padding-top: 5px;
+}
+
+.facebook{
+	width: 40px;
+}
+
+.mail{
+	width: 50px;
+}
 @media handheld, only screen and (max-width: 767px){
 	header img{
 		width: 50% !important;

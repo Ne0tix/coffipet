@@ -12,16 +12,22 @@
 		<link rel="stylesheet" href="../css/simplegrid.css">
 		<link rel="stylesheet" href="../css/style.css">
 		<script src="js/respond.min.js" type="text/javascript"></script>
+		<script src="js/modernizr-custom.js" type="text/javascript"></script>
 	</head>
 	<body>
 		<header class="grid">
-				<a href="../index.html"><img class="col-1-5" alt="Logo Coffipet" src="../image/LogoCoffIpet.png"></a>
+				<a href="../index.html"><img class="col-1-4" alt="Logo Coffipet" src="../image/LogoCoffipetAlphaColorResize.png"></a>
 			<nav>
-				<ul>
-					<li class="col-1-5"><a href="news.html" class="active">News</a></li>
-					<li class="col-1-5"><a href="produit.html">Nos produits</a></li>
-					<li class="col-1-5"><a href="horaire.html">Horaire</a></li>
-					<li class="col-1-5"><a href="contact.html">Contact</a></li>
+				<ul id="nav">
+					<li class="col-1-4"><a href="news.html">News</a></li>
+					<li class="col-1-4" id="cate"><a href="">Nos produits</a>
+                        <ul>
+                            <li><a href="Cafe.html">Café aromatisé</a></li>
+                            <li><a href="ChocolatChaud.html">Chocolat chaud</a></li>
+                            <li><a href="Sirop.html">Sirop aromatisé</a></li>
+                        </ul>
+                    </li>
+					<li class="col-1-4"><a href="horaire.html">Horaire</a></li>
 				</ul>
 			</nav>
 		</header>
@@ -47,17 +53,13 @@ MERCI A TOUS POUR COFFIPET ET SES MEMBRES.</p>
 			</article>
 		</section>
 		<footer class="grid">
-			<p class="col-1-1">Copyright @Houbar Quentin<p>
-			
-
-			<p>
-				<a href="http://jigsaw.w3.org/css-validator/check/style.css">
-					<img style="border:0;width:88px;height:31px"
-						src="http://jigsaw.w3.org/css-validator/images/vcss"
-						alt="CSS Valide !" />
-				</a>
-			</p>
-            
+            <div class="info">
+                <p class="col-1-2">Copyright @Houbar Quentin<p>
+            </div>
+            <div id="contact">
+                <a href="mailto:coffipet@gmail.com"><img class="mail" alt="" src="../image/noun_172891_cc.png"></a>
+                <a href="https://www.facebook.com/Coffipet-680980008705867/?fref=ts" target="_blank_"><img class="facebook" alt="" src="../image/noun_40254_cc.png"></a>
+            </div>
 		</footer>
 	</body>
 </html>
