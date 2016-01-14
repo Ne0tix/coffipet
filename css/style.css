@@ -136,6 +136,20 @@ section h1{
     color: #6a4b3d;
     margin-top: 0;
 }
+
+.press{
+    padding: 0 !important;
+}
+
+h2{
+    padding-left: 13%;
+    padding-top: 5%;
+}
+
+h3{
+    padding-top: 5%;
+}
+
 article {
 	text-align: justify;
 	font-size: 20px;
@@ -143,7 +157,9 @@ article {
 	padding-right: 10% !important;
 }
 
-
+p a:visited{
+    color: #F7B05B;
+}
 #margin{
 	margin-bottom: 19.2px;
 }
